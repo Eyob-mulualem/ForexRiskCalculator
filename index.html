@@ -6,7 +6,9 @@
     <title>Forex Risk Management Calculator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    
+    <style>
+       
+    </style>
 </head>
 <body>
 
@@ -14,13 +16,14 @@
         <img src="biqu.jpg" alt="Your Logo" height="100">
         <h2 class="mt-3">Forex Risk Management Calculator</h2>
     </header>
-    <div class="container mt-5">
-     
-<form id="riskCalculatorForm">
-    <div class="form-group">
-        <label for="currencyPair">Currency Pair</label>
-        <select class="form-control" id="currencyPair" required>
-            
+
+    <div class="container mt-5 scrollable">
+        <!-- User Input Form -->
+        <form id="riskCalculatorForm">
+            <div class="form-group">
+                <label for="currencyPair">Currency Pair</label>
+                <select class="form-control" id="currencyPair" required>
+                     
             <option value="XAUUSD">XAU/USD</option>
             <option value="AUDUSD">AUD/USD</option>
             <option value="EURUSD">EUR/USD</option>
@@ -29,40 +32,40 @@
             <option value="USDCAD">USD/CAD</option>
             <option value="USDCHF">USD/CHF</option>
             <option value="USDJPY">USD/JPY</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="riskAmount">Risk Amount ($)</label>
-        <input type="number" class="form-control" id="riskAmount" placeholder="Enter risk amount" required>
-    </div>
-    <div class="form-group">
-        <label for="stopLoss">Stop Loss (pips)</label>
-        <input type="number" class="form-control" id="stopLoss" placeholder="Enter stop loss" required>
-    </div>
-    <button type="submit" class="btn btn-primary">Calculate Lot Size</button>
-</form>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="riskAmount">Risk Amount ($)</label>
+                <input type="number" class="form-control" id="riskAmount" placeholder="Enter risk amount" required>
+            </div>
+            <div class="form-group">
+                <label for="stopLoss">Stop Loss (pips)</label>
+                <input type="number" class="form-control" id="stopLoss" placeholder="Enter stop loss" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate Lot Size</button>
+        </form>
 
-
-       
+        <!-- Result Display -->
         <div id="result" class="mt-4">
-          
+            <div id="result" class="mt-4">
+            </div>
+      </div>
+
+      </div>
+
+    <!-- Gray Background Footer -->
+    <div class="footer">
+        <p>&copy; 2023 Biqu forex.</p>
+
+        <!-- Join Our Community -->
+        <div class="community">
+            <p>Join Our Community:</p>
+            <a href="https://t.me/biquforex">
+                <img src="telegram.png" alt="Telegram Logo" height="30">
+                Biqu Forex
+            </a>
         </div>
     </div>
-
-  
-<div class="footer mt-5">
-    <p>&copy; 2023 Biqu forex.</p>
-
-    
-    <div class="community">
-        <p>Join Our Community:</p>
-        <a href="https://t.me/biquforex">
-            <img src="telegram.png" alt="Telegram Logo" height="30">
-            Biqu Forex
-        </a>
-    </div>
-</div>
-
 
     <script src="script.js"></script>
 </body>
