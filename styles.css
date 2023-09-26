@@ -1,0 +1,11 @@
+/* styles.css */
+
+/* Gray background footer */
+.footer {
+    background-color: #f0f8ff;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
