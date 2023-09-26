@@ -1,11 +1,26 @@
-/* styles.css */
+ /* Additional inline styles for footer positioning */
+ body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
 
-/* Gray background footer */
+.container {
+    flex: 1;
+    padding-bottom: 120px; /* Add padding at the bottom to prevent content overlap with footer */
+}
+
+/* Ensure that the footer is always at the bottom */
 .footer {
     background-color: #f0f8ff;
     padding: 20px 0;
     text-align: center;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+}
+
+/* Scrollable content */
+.scrollable {
+    overflow-y: auto;
+    max-height: calc(100vh - 180px); /* Adjust as needed */
 }
